@@ -5,7 +5,7 @@ import loadjs from 'loadjs'
 import { Global, css } from '@emotion/core'
 
 // const API_PATH = 'https://swapi-graphql.netlify.app/.netlify/functions/index';
-const API_PATH = '/api/entry/'
+const API_PATH = '/api/graphql/'
 
 const Logo = () => <span>{'Di'}</span>;
 
