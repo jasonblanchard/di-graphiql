@@ -1,11 +1,12 @@
-namespace: di
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- sa.yaml
-- deployment.yaml
-- service.yaml
-- mapping.yaml
+  - sa.yaml
+  - deployment.yaml
+  - service.yaml
+  - mapping.yaml
+commonLabels:
+  app: graphiql
 configMapGenerator:
 - name: graphiql-config
   literals:
@@ -14,6 +15,3 @@ configMapGenerator:
   - BASE_PATH='/graphiql/'
   - PAGE_TITLE='graphiql'
   - APP_CONTAINER_ID='root'
-images:
-- name: jasonblanchard/di-graphiql
-  newTag: latest

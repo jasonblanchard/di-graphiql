@@ -3,5 +3,4 @@ kind: Mapping
 metadata:
   name: graphiql
 spec:
-  prefix: /graphiql/
-  rewrite: '/'
+  service: graphiql:8080

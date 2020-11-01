@@ -2,18 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: graphiql
-  namespace: di
-  labels:
-    app: graphiql
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: graphiql
   template:
-    metadata:
-      labels:
-        app: graphiql
     spec:
       serviceAccountName: graphiql
       containers:
