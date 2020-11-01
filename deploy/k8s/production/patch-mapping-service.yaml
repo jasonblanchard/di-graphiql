@@ -3,4 +3,4 @@ kind: Mapping
 metadata:
   name: graphiql
 spec:
-  service: graphiql:8080
+  service: graphiql-production:8080
