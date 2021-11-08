@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.10.5",
     "@emotion/core": "^10.0.28",
-    "graphiql": "^1.0.3",
+    "graphiql": "^1.4.7",
     "graphql": "15.0.0",
     "loadjs": "^4.2.0",
     "react": "16.13.1",
